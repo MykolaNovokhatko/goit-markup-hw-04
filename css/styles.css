@@ -109,7 +109,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-decoration:active::after {
+.link:active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -525,6 +525,7 @@ top: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   align-items: baseline;
+  margin-bottom: 16px;
 }
 
 .footer-content {
@@ -535,7 +536,6 @@ top: 0;
 .footer-social-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   margin-left: 120px;
 }
 
@@ -555,6 +555,7 @@ top: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-social-list-link:focus,
 .footer-social-list-link:hover {
   background-color: #31d0aa;
 }
